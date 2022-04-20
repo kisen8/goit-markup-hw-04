@@ -130,35 +130,35 @@ body {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  fill: var(--text-color);
+
+  color: var(--text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.feedback .link:hover {
-  fill: var(--accent-color);
+.feedback .link:hover,
+.feedback .link:focus {
+  color: var(--accent-color);
 }
 
 .icons-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--text-color);
 }
 .icons-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--text-color);
 }
-/* 
-.icon-tel:hover {
+.icons-mail:hover,
+.icons-tel:hover {
   fill: var(--accent-color);
 }
-
-.icons-mail:hover {
-  fill: var(--accent-color);
-} */
 
 /* HERO */
 .hero {
@@ -257,6 +257,24 @@ body {
 .features-item:not(:first-child) {
   margin-left: 30px;
 }
+
+.icons {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  height: 120px;
+  /* content: ''; */
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.features-icon {
+  
+  width: 70px;
+  height: 70px;
+  
+  
 
 .features-title {
   margin-top: 0;
