@@ -589,7 +589,7 @@ body {
 }
 
 .cards {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   margin: -15px;
 }
@@ -629,10 +629,9 @@ body {
   line-height: 1.88;
 }
 
-.cards-item:hover,
-.cards-item:focus {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+.cards .link:hover,
+.cards .link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
